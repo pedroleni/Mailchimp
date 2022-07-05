@@ -6,96 +6,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mailchimp</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-  <!---------------HEADER ----------------------------->  
-  <header>
-    <div>
-        <img src="#" alt="mono-logo">
+      <!---------------HEADER ----------------------------->  
+  <main class="container">
+    <div class="izquierda">
+        <img class="logo" src="./0005310_mailchimp-synchronization-plugin.png" alt="mono-logo">
     </div>
-    <div>
+    <div class="derecha">
         <h1>Welcome to Mailchimp</h1>
-        <p>
-            Find your people. Engage your coustomers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="#">Log in</a>
-        </p>
-        
-    </div>
+        <h2>
+            Find your people. Engage your coustomers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a class="registrarse" href="#">Log in</a>
+        </h2>
 
-    <main>
-        
         <div>
             
             <div>
                 <form method="post" action="https://www.w3schools.com/action_page.php">
                    <!--EMAIL-->
-                    <p>
+                    <p class="nombreInformcion">
                         <label for="email">Email</label>
                     </p>
-                    <p>
-                        <input type="email" id="email" name="email" placeholder="e.g. jhon.dow@gmail.com">
+                    <p >
+                        <input class="informacion" type="email" id="email" name="email" placeholder="e.g. jhon.dow@gmail.com">
                     </p>
 
 
-                    <p>
+                    <p class="nombreInformcion">
                         <label for="Username">Username</label>
                     </p>
                     <p>
-                        <input type="text" name="Username" id="username">
+                        <input class="informacion" type="text" name="Username" id="username">
                     </p>
 
 
                     <!--CONTRASEÑA-->
-                    <p>
+                    <p class="nombreInformcion">
                         <label for="contraseña">Password</label>
                     </p>
                     <p>
-                        <input type="password" id="contraseña" name="contraseña"  minlength="8" maxlength="8">
+                        <input class="informacion" type="password" id="contraseña" name="contraseña"  minlength="8" maxlength="8">
                     </p>
 
                     <!--CARACTERISTICAS DE LA CONTRASEÑA-->
-                    <div>
-                        <lu>
-                            <li>One lowercase character</li>
-                            <li>One uppercase character</li>
-                            <li>One number</li>
-                            <li>One special character</li>
-                            <li>8 character minimum</li>
-                        </lu>
+                    <div class="containerLista">
+                        <div class="listaIzquierda">
+                            <lu>
+                                <li>One lowercase character</li>
+                                <li>One uppercase character</li>
+                                <li>One number</li>
+                               
+                            </lu>
+                        </div>
+                        <div class="listaDerecha">
+                            <lu>
+                                <li>One special character</li>
+                                <li>8 character minimum</li>
+                            </lu>
+                        </div>
                     </div>
 
-                    <div>
-                        <!--TERMINOS CONDICIONES-->
-                        <p>
-                            <input type="checkbox" id="terminos" name="terminos">
-                            <label for="terminos">I don't wanr to receive emails about new Mailchimp products, best practices, or special offers.</label>
-                        </p>
+                    <div class="terminos">
+                        <div class="derechaTerminos">
+                            <!--TERMINOS CONDICIONES-->
+                            <p>
+                                <input type="checkbox" id="terminos" name="terminos">
+                                <label for="terminos">I don't wanr to receive emails about new Mailchimp products, best practices, or special offers.</label>
+                            </p>
+                        </div>
+    
+    
+                        <div class="izquierdaTerminos">
+                            <input class="guardar" align="center" type="submit" value="Sign Up">
+    
+                        </div>
                     </div>
 
-
-                    <div>
-                        <input align="center" type="submit" value="Sign Up">
-
-                    </div>
+                    <p>
+                        By clicking the "Sign Up" button, you are creating a Mailchimp account, 
+                        and you agree to Mailchimp's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a>
+                
+                    </p>
                     
         
                     
                     
                 </form>
-                
             </div>
-        </div>
-        <div></div>
-    </main>
+        </div> 
+    </div>
+  </main
 </body>
 
-<footer>
 
-    <p>
-        By clicking the "Sign Up" button, you are creating a Mailchimp account, 
-        and you agree to Mailchimp's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a>
-
-    </p>
-</footer>
 </html>
